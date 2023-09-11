@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import {Route, Routes} from "react-router-dom";
 
-function App() {
+import Header from "./components/frontend/Header";
+import Footer from "./components/frontend/Footer";
+import Main from "./components/frontend/Main";
+import Admin from "./components/backend/Admin";
+import InnerMain from "./components/frontend/InnerMain";
+import InnerNav from "./components/frontend/InnerNav";
+import Java from "./components/frontend/Java";
+import Home from "./components/frontend/Home";
+
+
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <> 
+    <Routes>
+      {/* for Frontend */}
+      <Route path="/" element={<Main />}>
+        
+      
+      </Route>
+      <Route>
+      <Route path="/InnerMain" element={< InnerMain />}/>
+      <Route path="/home" element={<Home />}/>
+         <Route path="/java" element={<Java />}/>
+      </Route>
+
+
+        {/* for Backend */}
+      <Route path="/admin" element={<Admin />}>
+      
+      </Route>
+    </Routes>
+    </>
+
+  )
 }
 
 export default App;
