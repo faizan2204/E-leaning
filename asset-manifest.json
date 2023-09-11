@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/E-leaning/static/css/main.e3018fa7.css",
+    "main.js": "/E-leaning/static/js/main.2c22b8ad.js",
+    "index.html": "/E-leaning/index.html",
+    "main.e3018fa7.css.map": "/E-leaning/static/css/main.e3018fa7.css.map",
+    "main.2c22b8ad.js.map": "/E-leaning/static/js/main.2c22b8ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3018fa7.css",
+    "static/js/main.2c22b8ad.js"
+  ]
+}
